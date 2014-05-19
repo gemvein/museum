@@ -29,4 +29,9 @@ describe Museum::CaseDetail do
     subject { fresh_package.loupe('rubygems').detail('name') }
     it { should == "bootstrap_pager" }
   end
+
+  describe '#follow' do
+    subject { fresh_package.loupe('github-readme').follow('html_url') }
+    it { should be_a String }
+  end
 end

@@ -6,6 +6,7 @@ require 'yaml_seeder'
 
 module Museum
 
+  require 'museum/methods'
   require 'museum/configuration'
   require 'museum/railtie'
   require 'museum/engine'

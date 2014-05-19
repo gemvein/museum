@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140517204349) do
+ActiveRecord::Schema.define(version: 20140519231105) do
 
   create_table "museum_case_details", force: true do |t|
     t.integer  "museum_case_id"

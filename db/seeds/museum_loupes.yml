@@ -6,3 +6,8 @@ github:
   title: 'GitHub'
   uri_template: 'https://api.github.com/repos/%{user}/%{name}'
   data_format: 'json'
+github_readme:
+  title: 'GitHub README'
+  slug: 'github-readme'
+  uri_template: 'https://api.github.com/repos/%{user}/%{name}/readme'
+  data_format: 'json'

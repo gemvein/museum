@@ -21,5 +21,10 @@ module Museum
         detail.value
       end
     end
+
+    def self.follow(key)
+      link = detail(key)
+      Museum.fetch_url(link)
+    end
   end
 end
