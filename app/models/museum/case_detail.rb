@@ -23,8 +23,7 @@ module Museum
     end
 
     def self.follow(key)
-      link = detail(key)
-      Museum.fetch_url(link)
+      detail(key).fetch
     end
   end
 end
