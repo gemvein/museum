@@ -18,5 +18,5 @@ Jeweler::Tasks.new do |gem|
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-Bundler::GemHelper.install_tasks
+# Bundler::GemHelper.install_tasks
 
