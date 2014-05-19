@@ -1,0 +1,4 @@
+%h3= :top_cases.l
+%ul.list-group
+  - for gem_case in Museum::Case.order(sort: :desc)
+    %li.list-group-item= link_to gem_case.title, [museum, gem_case]

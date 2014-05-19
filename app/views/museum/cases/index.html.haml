@@ -1,0 +1,5 @@
+-add_title :cases.l
+
+- for gem_case in @cases
+  %h2= gem_case.title
+  = link_to gem_case.name, [museum, gem_case], class: 'btn btn-large btn-success'

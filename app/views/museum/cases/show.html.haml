@@ -1,0 +1,12 @@
+- add_title @case.title
+- add_subtitle @case.loupe('rubygems').detail('version')
+
+- for loupe in Museum::Loupe.all
+  - add_tab loupe.title, loupe.slug do
+    %h2= loupe.title
+    %table
+      - for detail in @case.loupe(loupe.slug)
+        %tr
+          %th= detail.key
+          %td= detail.value
+= render_tabs 'top'
