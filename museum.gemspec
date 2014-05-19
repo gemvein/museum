@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Karen Lundgren"]
-  s.date = "2014-05-18"
+  s.date = "2014-05-19"
   s.description = "For organizations that want to market a gem in style, Museum and its plugins cooperate to provide you with an ever-fresh marketing site for your gems."
   s.email = "karen.e.lundgren@gmail.com"
   s.executables = ["rails"]
@@ -87,10 +87,13 @@ Gem::Specification.new do |s|
     "spec/dummy/config/routes.rb",
     "spec/dummy/coverage/.last_run.json",
     "spec/dummy/coverage/.resultset.json",
+    "spec/dummy/db/development.sqlite3",
     "spec/dummy/db/migrate/20140517204347_create_museum_loupes.museum.rb",
     "spec/dummy/db/migrate/20140517204348_create_museum_case_details.museum.rb",
     "spec/dummy/db/migrate/20140517204349_create_museum_cases.museum.rb",
+    "spec/dummy/db/schema.rb",
     "spec/dummy/db/seeds.rb",
+    "spec/dummy/db/test.sqlite3",
     "spec/dummy/lib/assets/.keep",
     "spec/dummy/lib/tasks/.keep",
     "spec/dummy/log/development.log",
@@ -100,11 +103,17 @@ Gem::Specification.new do |s|
     "spec/dummy/public/500.html",
     "spec/dummy/public/favicon.ico",
     "spec/dummy/public/robots.txt",
+    "spec/dummy/tmp/pids/server.pid",
     "spec/factories/case.rb",
+    "spec/factories/loupe.rb",
+    "spec/helpers/museum/cases_helper_spec.rb",
+    "spec/models/case_detail_spec.rb",
     "spec/models/case_spec.rb",
+    "spec/models/loupe_spec.rb",
     "spec/museum_spec.rb",
     "spec/spec_helper.rb",
     "spec/support/case_support.rb",
+    "spec/support/loupe_support.rb",
     "spec/views/museum/cases/index.html.haml_spec.rb",
     "spec/views/museum/cases/show.html.haml_spec.rb"
   ]
