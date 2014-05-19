@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "museum"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Karen Lundgren"]
@@ -102,7 +102,6 @@ Gem::Specification.new do |s|
     "spec/dummy/public/500.html",
     "spec/dummy/public/favicon.ico",
     "spec/dummy/public/robots.txt",
-    "spec/dummy/tmp/pids/server.pid",
     "spec/factories/case.rb",
     "spec/factories/loupe.rb",
     "spec/helpers/museum/cases_helper_spec.rb",
