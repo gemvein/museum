@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "museum"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Karen Lundgren"]
   s.date = "2014-05-19"
-  s.description = "For organizations that want to market a gem in style, Museum and its plugins cooperate to provide you with an ever-fresh marketing site for your gems."
+  s.description = "For organizations that want to market a gem in style, Museum uses APIs to provide you with an ever-fresh marketing site for your gems."
   s.email = "karen.e.lundgren@gmail.com"
   s.executables = ["rails"]
   s.extra_rdoc_files = [
@@ -117,7 +117,7 @@ Gem::Specification.new do |s|
     "spec/views/museum/cases/index.html.haml_spec.rb",
     "spec/views/museum/cases/show.html.haml_spec.rb"
   ]
-  s.homepage = "http://www.gemvein.com/museum/museum"
+  s.homepage = "http://www.gemvein.com/museum/cases/museum"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.3"
