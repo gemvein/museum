@@ -1,5 +1,6 @@
 class String
-  def fetch
+  def fetch(headers = {})
+    headers['User-Agent'] = 'GemVein Museum'
     require 'net/http'
     require 'net/https'
 
@@ -8,7 +9,7 @@ class String
     http.use_ssl = (uri.scheme == "https")
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
-    request = Net::HTTP::Get.new(uri.request_uri, {'User-Agent' => 'GemVein Museum'})
+    request = Net::HTTP::Get.new(uri.request_uri, headers)
 
     response = http.request(request)
     response.body
