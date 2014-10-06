@@ -4,21 +4,21 @@ source "https://rubygems.org"
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 
-gem 'rails', '>= 4.1'
-gem 'rails-i18n'
-gem 'jquery-rails'
-gem 'haml-rails'
-gem 'bootstrap_leather'
-gem 'friendly_id'
-gem 'yaml_seeder'
+gem 'rails', '~> 4.1'
+gem 'rails-i18n', '~> 4'
+gem 'jquery-rails', '~> 3.1'
+gem 'haml-rails', '~> 0.5'
+gem 'bootstrap_leather', '~> 0.2.3'
+gem 'friendly_id', '~> 5'
+gem 'yaml_seeder', '~> 0.1'
 
 group :test do
-  gem 'rspec-rails'
-  gem 'rspec-its'
-  gem 'shoulda-matchers'
-  gem 'database_cleaner'
-  gem 'factory_girl_rails'
-  gem 'coveralls'
+  gem 'rspec-rails', '~> 3.1'
+  gem 'rspec-its', '~> 1'
+  gem 'shoulda-matchers', '~> 2.7'
+  gem 'database_cleaner', '~> 1.3'
+  gem 'factory_girl_rails', '~> 4.4'
+  gem 'coveralls', '~> 0.7'
 end
 
 gemspec
