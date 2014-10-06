@@ -14,6 +14,7 @@ gem 'yaml_seeder'
 
 group :test do
   gem 'rspec-rails'
+  gem 'rspec-its'
   gem 'shoulda-matchers'
   gem 'database_cleaner'
   gem 'factory_girl_rails'

@@ -34,8 +34,8 @@ describe Museum::Case do
   end
 
   describe '#loupe' do
-    subject { fresh_package.loupe('rubygems') }
-    it { should have_at_least(2).items }
+    subject { fresh_package.loupe('rubygems').count }
+    it { should be > 2 }
   end
 
   describe '#to_param' do

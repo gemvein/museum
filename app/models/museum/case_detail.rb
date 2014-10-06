@@ -16,7 +16,7 @@ module Museum
     def self.detail(key)
       detail = find_by_key(key)
       if detail.nil?
-        nil
+        raise 'Could not find ' + key
       else
         detail.value
       end

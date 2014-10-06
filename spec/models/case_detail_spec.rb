@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Museum::CaseDetail do
+describe ::Museum::CaseDetail do
   include_context 'loupe support'
   include_context 'case support'
 
@@ -21,8 +21,8 @@ describe Museum::CaseDetail do
   end
 
   describe '#find_all_by_loupe_slug' do
-    subject { Museum::CaseDetail.find_all_by_loupe_slug('rubygems') }
-    it { should have_at_least(2).items }
+    subject { Museum::CaseDetail.find_all_by_loupe_slug('rubygems').count }
+    it { should be >= 2 }
   end
 
   describe '#detail' do
@@ -31,7 +31,7 @@ describe Museum::CaseDetail do
   end
 
   describe '#follow' do
-    subject { fresh_package.loupe('github-readme').follow('html_url') }
+    subject { fresh_package.loupe('rubygems').follow('homepage_uri') }
     it { should be_a String }
   end
 end

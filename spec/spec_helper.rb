@@ -8,7 +8,8 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'rspec/rails'
-require 'rspec/autorun'
+# require 'rspec/autorun'
+require 'rspec/its'
 require 'rails/all'
 
 require 'factory_girl_rails'
@@ -39,6 +40,8 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+  config.infer_spec_type_from_file_location!
 
   # ## Mock Framework
   #
