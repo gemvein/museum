@@ -42,6 +42,7 @@ Gem::Specification.new do |s|
     "config/routes.rb",
     "coverage/.last_run.json",
     "coverage/.resultset.json",
+    "coverage/.resultset.json.lock",
     "db/migrate/20140516193656_create_museum_loupes.rb",
     "db/migrate/20140516193657_create_museum_case_details.rb",
     "db/migrate/20140516193658_create_museum_cases.rb",
@@ -107,13 +108,17 @@ Gem::Specification.new do |s|
     "spec/dummy/public/robots.txt",
     "spec/factories/case.rb",
     "spec/factories/loupe.rb",
+    "spec/helpers/cases_helper_spec.rb",
     "spec/models/case_detail_spec.rb",
     "spec/models/case_spec.rb",
     "spec/models/loupe_spec.rb",
     "spec/museum_spec.rb",
+    "spec/routing/engine_routes_spec.rb",
     "spec/spec_helper.rb",
     "spec/support/case_support.rb",
-    "spec/support/loupe_support.rb"
+    "spec/support/loupe_support.rb",
+    "spec/views/cases/index.html.haml_spec.rb",
+    "spec/views/cases/show.html.haml_spec.rb"
   ]
   s.homepage = "http://www.gemvein.com/museum/cases/museum"
   s.licenses = ["MIT"]
