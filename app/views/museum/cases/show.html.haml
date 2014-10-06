@@ -1,11 +1,11 @@
-%h1= 
-	@case.title
-	%small= @case.loupe('rubygems').detail('version')
+%h1
+  = @case.title
+  %small= @case.loupe('rubygems').detail('version')
 
 - for loupe in Museum::Loupe.all
-	%h3= loupe.title
-	%table
-	  - for detail in @case.loupe(loupe.slug)
-	    %tr
-	      %th= detail.key
-	      %td= detail.value
+  %h3= loupe.title
+  %table
+    - for detail in @case.loupe(loupe.slug)
+      %tr
+        %th= detail.key
+        %td= detail.value

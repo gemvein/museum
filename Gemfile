@@ -10,6 +10,7 @@ gem 'jquery-rails', '~> 3.1'
 gem 'haml-rails', '~> 0.5'
 gem 'friendly_id', '~> 5'
 gem 'yaml_seeder', '~> 0.1'
+gem 'jeweler', '~> 2'
 
 group :test do
   gem 'rspec-rails', '~> 3.1'
@@ -18,6 +19,7 @@ group :test do
   gem 'database_cleaner', '~> 1.3'
   gem 'factory_girl_rails', '~> 4.4'
   gem 'coveralls', '~> 0.7'
+  gem 'sqlite3', '~> 1.3'
 end
 
 gemspec

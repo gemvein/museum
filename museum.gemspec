@@ -79,7 +79,6 @@ Gem::Specification.new do |s|
     "spec/dummy/config/environments/production.rb",
     "spec/dummy/config/environments/test.rb",
     "spec/dummy/config/initializers/backtrace_silencers.rb",
-    "spec/dummy/config/initializers/bootstrap_leather.rb",
     "spec/dummy/config/initializers/filter_parameter_logging.rb",
     "spec/dummy/config/initializers/inflections.rb",
     "spec/dummy/config/initializers/mime_types.rb",
@@ -135,8 +134,8 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<haml-rails>, ["~> 0.5"])
       s.add_runtime_dependency(%q<friendly_id>, ["~> 5"])
       s.add_runtime_dependency(%q<yaml_seeder>, ["~> 0.1"])
+      s.add_runtime_dependency(%q<jeweler>, ["~> 2"])
       s.add_runtime_dependency(%q<museum>, [">= 0"])
-      s.add_development_dependency(%q<sqlite3>, [">= 0"])
     else
       s.add_dependency(%q<rails>, ["~> 4.1"])
       s.add_dependency(%q<rails-i18n>, ["~> 4"])
@@ -144,8 +143,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<haml-rails>, ["~> 0.5"])
       s.add_dependency(%q<friendly_id>, ["~> 5"])
       s.add_dependency(%q<yaml_seeder>, ["~> 0.1"])
+      s.add_dependency(%q<jeweler>, ["~> 2"])
       s.add_dependency(%q<museum>, [">= 0"])
-      s.add_dependency(%q<sqlite3>, [">= 0"])
     end
   else
     s.add_dependency(%q<rails>, ["~> 4.1"])
@@ -154,8 +153,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<haml-rails>, ["~> 0.5"])
     s.add_dependency(%q<friendly_id>, ["~> 5"])
     s.add_dependency(%q<yaml_seeder>, ["~> 0.1"])
+    s.add_dependency(%q<jeweler>, ["~> 2"])
     s.add_dependency(%q<museum>, [">= 0"])
-    s.add_dependency(%q<sqlite3>, [">= 0"])
   end
 end
 
