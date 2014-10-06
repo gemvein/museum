@@ -8,7 +8,6 @@ gem 'rails', '~> 4.1'
 gem 'rails-i18n', '~> 4'
 gem 'jquery-rails', '~> 3.1'
 gem 'haml-rails', '~> 0.5'
-gem 'bootstrap_leather', '~> 0.2.3'
 gem 'friendly_id', '~> 5'
 gem 'yaml_seeder', '~> 0.1'
 
