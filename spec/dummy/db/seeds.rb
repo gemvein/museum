@@ -1,1 +1,0 @@
-Museum::Engine.load_seed

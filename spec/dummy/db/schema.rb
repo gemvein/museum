@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140519231105) do
 
-  create_table "museum_case_details", force: true do |t|
+  create_table "museum_case_details", force: :cascade do |t|
     t.integer  "museum_case_id"
     t.integer  "museum_loupe_id"
     t.string   "key"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20140519231105) do
 
   add_index "museum_case_details", ["museum_loupe_id", "museum_case_id", "key"], name: "key", unique: true
 
-  create_table "museum_cases", force: true do |t|
+  create_table "museum_cases", force: :cascade do |t|
     t.string   "name"
     t.string   "title"
     t.text     "sort"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20140519231105) do
 
   add_index "museum_cases", ["name"], name: "index_museum_cases_on_name", unique: true
 
-  create_table "museum_loupes", force: true do |t|
+  create_table "museum_loupes", force: :cascade do |t|
     t.string   "title"
     t.string   "slug"
     t.string   "uri_template"

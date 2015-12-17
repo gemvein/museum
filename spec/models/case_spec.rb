@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Museum::Case do
   include_context 'loupe support'
@@ -8,8 +8,8 @@ describe Museum::Case do
   it { should have_many(:case_details) }
 
   describe '#freshen_if_expired' do
-    subject { expired_package.freshen_if_expired.updated_at.to_datetime }
-    it { should be > (Time.now - Museum.configuration.refresh_interval).to_datetime}
+    subject { expired_package.freshen_if_expired }
+    its(:updated_at) { should be > (Time.now - Museum.configuration.refresh_interval) }
   end
 
   describe '#expired?' do

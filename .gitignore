@@ -3,3 +3,6 @@ spec/dummy/log/*.log
 pkg/
 .idea/
 Gemfile.lock
+coverage/
+spec/dummy/coverage/
+server.pid

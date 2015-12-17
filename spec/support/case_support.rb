@@ -1,7 +1,7 @@
 shared_context 'case support' do
-  let!(:dummy_package) { FactoryGirl.create(:case, :name => 'bootswitch') }
-  let!(:next_package) { FactoryGirl.create(:case, :name => 'customizable_bootstrap') }
-  let!(:last_package) { FactoryGirl.create(:case, :name => 'bootstrap_leather') }
-  let!(:fresh_package) { FactoryGirl.create(:case, :name => 'bootstrap_pager').freshen }
-  let!(:expired_package) { FactoryGirl.create(:case, :name => 'private_person', :updated_at => (Time.now - 14400).to_datetime) }
+  let!(:dummy_package) { Museum::Case.find_by_name('bootswitch') }
+  let!(:next_package) { Museum::Case.find_by_name('customizable_bootstrap') }
+  let!(:last_package) { Museum::Case.find_by_name('bootstrap_leather') }
+  let!(:fresh_package) { Museum::Case.find_by_name('bootstrap_pager') }
+  let!(:expired_package) { Museum::Case.find_by_name('private_person') }
 end

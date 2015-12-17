@@ -1,6 +1,6 @@
 FactoryGirl.create(:loupe,
                    title: 'RubyGems',
-                   uri_template: 'http://www.rubygems.org/api/v1/gems/%{name}.json',
+                   uri_template: 'https://www.rubygems.org/api/v1/gems/%{name}.json',
                    data_format: 'json'
 )
 FactoryGirl.create(:loupe,

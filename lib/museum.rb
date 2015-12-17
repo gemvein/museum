@@ -1,10 +1,11 @@
-require 'rails/all'
-require 'rails-i18n'
-require 'haml-rails'
-require 'friendly_id'
-require 'yaml_seeder'
-
 module Museum
+  require "active_record/railtie"
+  require "action_controller/railtie"
+  require "action_view/railtie"
+  require "sprockets/railtie"
+
+  require 'rails-i18n'
+  require 'friendly_id'
 
   require 'museum/methods'
   require 'museum/configuration'

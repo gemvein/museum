@@ -24,5 +24,14 @@ RSpec::Core::RakeTask.new(:spec)
 
 task :default => :spec
 
-# Bundler::GemHelper.install_tasks
+APP_RAKEFILE = File.expand_path("../spec/dummy/Rakefile", __FILE__)
+load 'rails/tasks/engine.rake'
 
+# Bundler::GemHelper.install_tasks
+namespace :museum do
+  desc "Recreate database from seeds"
+  task :clean do
+    dummy_app_path = Museum::Engine.root.join('spec', 'dummy')
+    system "bundle exec rake -f #{dummy_app_path.join('Rakefile')} db:drop db:create db:migrate db:seed db:test:prepare"
+  end
+end
