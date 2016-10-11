@@ -4,7 +4,7 @@ source "https://rubygems.org"
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 5.0'
 gem 'rails-i18n', '~> 4.0'
 gem 'jquery-rails', '~> 4.0'
 gem 'haml-rails', '~> 0.9'
@@ -16,7 +16,8 @@ group :test do
 end
 
 group :test, :development do
-  gem 'rspec-rails', '~> 3.4'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
   gem 'capybara', '~> 2.5'
   gem 'rspec-its', '~> 1.2'
   gem 'database_cleaner', '~> 1.5'

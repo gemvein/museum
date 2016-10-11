@@ -13,11 +13,11 @@ describe Museum::Case do
   end
 
   describe '#expired?' do
-    context 'on an expired package' do
+    describe 'on an expired package' do
       subject { expired_package.expired? }
       it { should be true }
     end
-    context 'on a fresh package' do
+    describe 'on a fresh package' do
       subject { fresh_package.expired? }
       it { should be false }
     end

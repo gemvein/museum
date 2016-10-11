@@ -36,6 +36,8 @@ ActiveRecord::Migrator.migrations_paths = 'spec/dummy/db/migrate'
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
+  config.expect_with(:rspec) { |c| c.syntax = :should }
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   # config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
