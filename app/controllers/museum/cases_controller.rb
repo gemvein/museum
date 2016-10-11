@@ -1,18 +1,18 @@
 module Museum
   class CasesController < ApplicationController
-    before_filter :load_case, except: [:index]
+    before_action :load_case, except: [:index]
 
     # GET /cases
     def index
       @cases = Museum::Case.all
     end
 
-    # GET /cases/1
+    # GET /cases/gem-name
     def show
       @case.freshen_if_expired
     end
 
-    # PATCH/PUT /cases/1/refresh
+    # PATCH/PUT /cases/gem-name/refresh
     def refresh
       if @case.freshen
         redirect_to @case.reload, notice: :success.l

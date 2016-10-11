@@ -1,5 +1,5 @@
 module Museum
-  class Loupe < ActiveRecord::Base
+  class Loupe < ::ApplicationRecord
     extend ::FriendlyId
     friendly_id :title, use: :slugged
 

@@ -1,5 +1,5 @@
 module Museum
-  class CaseDetail < ActiveRecord::Base
+  class CaseDetail < ::ApplicationRecord
     validates_presence_of :key, :case, :loupe
 
     belongs_to :case, class_name: 'Museum::Case', foreign_key: :museum_case_id

@@ -1,6 +1,8 @@
 Museum
 ===========
 
+**Updated for Rails 5**
+
 [![Gem Version](https://badge.fury.io/rb/museum.svg)](http://badge.fury.io/rb/museum)
 [![Build Status](https://travis-ci.org/gemvein/museum.svg)](https://travis-ci.org/gemvein/museum)
 [![Coverage Status](https://coveralls.io/repos/gemvein/museum/badge.png)](https://coveralls.io/r/gemvein/museum)
@@ -36,5 +38,5 @@ Contributing to Museum
 Copyright
 ---------
 
-Copyright (c) 2014 Gem Vein. See LICENSE.txt for further details.
+Copyright (c) 2014-2016 Gem Vein. See LICENSE.txt for further details.
 

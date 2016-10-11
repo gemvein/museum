@@ -11,21 +11,21 @@ describe Museum::CasesController do
   end
   describe 'GET show' do
     context 'with an invalid gem name' do
-      before(:each) { get :show, id: 'bad' }
+      before(:each) { get :show, params: { id: 'bad' } }
       it_should_behave_like 'a 404 Not Found error'
     end
     context 'with a valid gem name' do
-      before(:each) { get :show, id: 'bootswitch' }
+      before(:each) { get :show, params: { id: 'bootswitch' } }
       it_should_behave_like 'a successful page', which_renders: :show
     end
   end
   describe 'GET refresh' do
     context 'with an invalid gem name' do
-      before(:each) { get :refresh, id: 'bad' }
+      before(:each) { get :refresh, params: { id: 'bad' } }
       it_should_behave_like 'a 404 Not Found error'
     end
     context 'with a valid gem name' do
-      before(:each) { get :refresh, id: 'bootswitch' }
+      before(:each) { get :refresh, params: { id: 'bootswitch' } }
       it_should_behave_like 'a redirect with a message', '/museum/cases/bootswitch', notice: 'Case was successfully refreshed.'
     end
   end
