@@ -9,7 +9,7 @@ gem 'rails-i18n', '~> 4.0'
 gem 'jquery-rails', '~> 4.0'
 gem 'haml-rails', '~> 0.9'
 gem 'friendly_id', '~> 5.1'
-gem 'jeweler', '~> 2.0'
+gem 'jeweler', '~> 2.1.1'
 
 group :test do
   gem 'shoulda-matchers', '~> 3.0', require: false
