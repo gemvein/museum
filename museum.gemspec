@@ -129,7 +129,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://www.gemvein.com/museum/cases/museum"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.5.1"
+  s.rubygems_version = "2.4.5.1"
   s.summary = "Rails 4 Engine for displaying information about a set of gems."
 
   if s.respond_to? :specification_version then
