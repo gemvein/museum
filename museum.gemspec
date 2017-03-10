@@ -11,17 +11,15 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Karen Lundgren"]
-  s.date = "2017-03-09"
+  s.date = "2017-03-10"
   s.description = "For organizations that want to market a gem in style, Museum uses APIs to provide you with an ever-fresh marketing site for your gems."
   s.email = "karen.e.lundgren@gmail.com"
-  s.executables = ["rails"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
   ]
   s.files = [
     ".coveralls.yml",
-    ".document",
     ".rspec",
     ".ruby-gemset",
     ".ruby-version",
@@ -40,7 +38,6 @@ Gem::Specification.new do |s|
     "app/views/museum/cases/_widget.html.haml",
     "app/views/museum/cases/index.html.haml",
     "app/views/museum/cases/show.html.haml",
-    "bin/rails",
     "config/locales/en.yml",
     "config/routes.rb",
     "db/migrate/20140516193656_create_museum_loupes.rb",
@@ -59,7 +56,6 @@ Gem::Specification.new do |s|
     "lib/museum/version.rb",
     "museum.gemspec",
     "spec/controllers/cases_controller_spec.rb",
-    "spec/dummy/.rspec",
     "spec/dummy/Rakefile",
     "spec/dummy/app/controllers/application_controller.rb",
     "spec/dummy/app/helpers/application_helper.rb",
