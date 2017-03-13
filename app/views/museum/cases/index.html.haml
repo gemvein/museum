@@ -1,5 +1,10 @@
 %h1= :cases.l
 
 - for gem_case in @cases
-  %h2= gem_case.title
-  = link_to gem_case.name, [museum, gem_case], class: 'btn btn-large btn-success'
+  %h2
+    = link_to gem_case.title, [museum, gem_case]
+    %small
+      v#{gem_case.loupe('rubygems').detail('version')}
+      (#{gem_case.name})
+  %p
+    = gem_case.loupe('rubygems').detail('info')

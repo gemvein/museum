@@ -4,8 +4,18 @@
 
 - for loupe in Museum::Loupe.all
   %h3= loupe.title
-  %table
+  %dl
     - for detail in @case.loupe(loupe.slug)
-      %tr
-        %th= detail.key
-        %td= detail.value
+      %dt
+        = detail.key.titleize.gsub(/( Ur.$)/) { $1.upcase }
+      %dd
+        %code
+          @case.loupe('#{loupe.slug}').detail('#{detail.key}')
+      %dd
+        - case detail.value
+          - when nil
+            %em.disabled nil
+          - when ''
+            %em.disabled blank
+          - else
+            = detail.value

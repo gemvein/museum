@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem 'rails', '~> 5.0'
 gem 'rails-i18n', '~> 5.0'
 gem 'jquery-rails', '~> 4.0'
+gem 'sass-rails', '~> 5.0'
 gem 'haml-rails', '~> 0.9'
 gem 'friendly_id', '~> 5.1'
 gem 'jeweler', '~> 2.3'
