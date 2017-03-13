@@ -9,10 +9,10 @@
 For organizations that want to market a gem with the latest updates, Museum syncs your gems' data via arbitrary APIs so that your software marketing website stays up to date with the latest information about your gems.
 
 ### Index Page
-(http://gemvein.com/assets/screenshots/museum-cases-index.png)
+![Index Page Screenshot](http://gemvein.com/assets/screenshots/museum-cases-index.png)
 
 ### Show Page
-(http://gemvein.com/assets/screenshots/museum-cases-show.png)
+![Show Page Screenshot](http://gemvein.com/assets/screenshots/museum-cases-show.png)
 
 ## Installation
 
