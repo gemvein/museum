@@ -6,7 +6,7 @@ module Museum
     include Rails::Generators::Migration
     
     def hello
-      output "Museum is ready to announce your gems in style.", :magenta
+      output "Museum is ready to display your gems in style.", :magenta
     end
     
     # all public methods in here will be run in order
