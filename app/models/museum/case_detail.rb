@@ -23,7 +23,7 @@ module Museum
     end
 
     def self.follow(key)
-      detail(key).fetch('Accept' => 'application/html')
+      detail(key).fetch('Accept' => 'application/vnd.github.html')
     end
   end
 end
