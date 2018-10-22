@@ -1,21 +1,21 @@
 after :loupes do
-  FactoryGirl.create(:case,
+  FactoryBot.create(:case,
                      name: 'bootswitch',
                      title: 'Bootswitch'
   )
-  FactoryGirl.create(:case,
+  FactoryBot.create(:case,
                      name: 'customizable_bootstrap',
                      title: 'Customizable Bootstrap'
   )
-  FactoryGirl.create(:case,
+  FactoryBot.create(:case,
                      name: 'bootstrap_leather',
                      title: 'Bootstrap Leather'
   )
-  FactoryGirl.create(:case,
+  FactoryBot.create(:case,
                      name: 'bootstrap_pager',
                      title: 'Bootstrap Pager'
   ).freshen
-  expired = FactoryGirl.create(:case,
+  expired = FactoryBot.create(:case,
                      name: 'private_person',
                      title: 'Private Person'
   )

@@ -1,5 +1,5 @@
 # This migration comes from museum (originally 20140516193658)
-class CreateMuseumCases < ActiveRecord::Migration
+class CreateMuseumCases < ActiveRecord::Migration[5.2]
   def change
     create_table :museum_cases do |t|
       t.string    :name

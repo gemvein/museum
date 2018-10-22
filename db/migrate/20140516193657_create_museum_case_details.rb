@@ -1,4 +1,4 @@
-class CreateMuseumCaseDetails < ActiveRecord::Migration
+class CreateMuseumCaseDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :museum_case_details do |t|
       t.integer :museum_case_id

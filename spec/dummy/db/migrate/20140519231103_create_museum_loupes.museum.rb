@@ -1,5 +1,5 @@
 # This migration comes from museum (originally 20140516193656)
-class CreateMuseumLoupes < ActiveRecord::Migration
+class CreateMuseumLoupes < ActiveRecord::Migration[5.2]
   def change
     create_table :museum_loupes do |t|
       t.string  :title

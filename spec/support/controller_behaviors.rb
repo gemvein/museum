@@ -1,7 +1,7 @@
 shared_examples_for 'a successful page' do |options = {}|
   context 'responds successfully' do
     subject { response }
-    it { should be_success }
+    it { should be_successful }
   end
   if options[:which_renders].present?
     it_behaves_like 'a page rendering a template', options[:which_renders]
