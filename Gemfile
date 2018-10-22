@@ -23,5 +23,5 @@ group :test, :development do
   gem 'sqlite3', '>= 1.3'
   gem 'seedbank', '>= 0.3'
   gem 'rubocop', '>= 0.58.2'
-  gem 'rubocop-rspec'
+  gem 'rubocop-rspec', '>= 1.3.0'
 end
