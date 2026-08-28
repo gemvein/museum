@@ -12,8 +12,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{Rails 4 Engine for displaying information about a set of gems.}
   gem.description = %Q{For organizations that want to market a gem in style, Museum uses APIs to provide you with an ever-fresh marketing site for your gems.}
-  gem.email = "karen.e.lundgren@gmail.com"
-  gem.authors = ["Karen Lundgren"]
+  gem.email = "loren.lundgren@gmail.com"
+  gem.authors = ["Loren Lundgren"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
